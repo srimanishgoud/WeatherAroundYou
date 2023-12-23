@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+.card{
+    width: 90%;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 40px 35px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.search{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex:1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    background: #ebfffc;
+    border: none;
+    color: #555;
+    /* padding: 10px 25px; */
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    /* font-size: 18px; */
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.search button img{
+    width: 26px;
+}
+
+.weather-icon{
+    width: 25%;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    /* padding:0 25%; */
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+
+.col{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.col img{
+    margin: 20px;
+}
+@media screen and (max-width: 768px){
+    .details{
+        width: 50%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+}
+
+.col div{
+    margin-bottom: 40px;
+}
+
+
+
+.humidity, .wind{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    /* font-style: italic; */
+    font-size: 20px;
+    margin-top: 10px;
+    color: red;
+    display: none;
+}
+
+.weather{
+    display: none;
+}
